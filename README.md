@@ -6,11 +6,15 @@ supporting both cuda and c++
 In the future I plan to add more options, checks etc.
  
 # Instructions 
-Clone the project and run the following commands:
+Clone the project and run the following commands:<br />
+<br />
+    
     mkdir build <br />
     cd build    <br />
     cmake ..     <br />
-    msbuild main.vcxproj <br />
+    msbuild main.vcxproj
+        
+<br />
 If everything is ok, a main.exe will be built inside Debug/ folder.
 Then run Debug/main.exe and the program should return:
 
@@ -20,8 +24,11 @@ c[0]=1.000000 (== 1.000000 * 1.000000)<br />
 c[1]=4.000000 (== 2.000000 * 2.000000)<br />
 <br />
 # Options
-For release versions run:
+For release versions run:<br />
+
     cmake .. -DCMAKE_BUILD_TYPE=RELEASE<br />
     msbuild main.vcxproj /property:Configuration=Release<br />
+
 and finally:<br />
+
     Release/main.exe<br />

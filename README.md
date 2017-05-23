@@ -7,21 +7,21 @@ In the future I plan to add more options, checks etc.
  
 # Instructions 
 Clone the project and run the following commands:
-mkdir build
-cd build
-cmake ..
-msbuild main.vcxproj
+    mkdir build <br />
+    cd build    <br />
+    cmake ..     <br />
+    msbuild main.vcxproj <br />
 If everything is ok, a main.exe will be built inside Debug/ folder.
 Then run Debug/main.exe and the program should return:
 
-Checking Results<br>
-Results verified<br>
-c[0]=1.000000 (== 1.000000 * 1.000000)<br>
-c[1]=4.000000 (== 2.000000 * 2.000000)<br>
-<br>
+Checking Results<br />
+Results verified<br />
+c[0]=1.000000 (== 1.000000 * 1.000000)<br />
+c[1]=4.000000 (== 2.000000 * 2.000000)<br />
+<br />
 # Options
 For release versions run:
-cmake .. -DCMAKE_BUILD_TYPE=RELEASE<br>
-msbuild main.vcxproj /property:Configuration=Release<br>
-and finally:<br>
-Release/main.exe<br>
+    cmake .. -DCMAKE_BUILD_TYPE=RELEASE<br />
+    msbuild main.vcxproj /property:Configuration=Release<br />
+and finally:<br />
+    Release/main.exe<br />

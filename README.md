@@ -9,9 +9,9 @@ In the future I plan to add more options, checks etc.
 Clone the project and run the following commands:<br />
 <br />
     
-    mkdir build <br />
-    cd build    <br />
-    cmake ..     <br />
+    mkdir build  
+    cd build    
+    cmake ..      
     msbuild main.vcxproj
         
 <br />
@@ -26,9 +26,9 @@ c[1]=4.000000 (== 2.000000 * 2.000000)<br />
 # Options
 For release versions run:<br />
 
-    cmake .. -DCMAKE_BUILD_TYPE=RELEASE<br />
-    msbuild main.vcxproj /property:Configuration=Release<br />
+    cmake .. -DCMAKE_BUILD_TYPE=RELEASE 
+    msbuild main.vcxproj /property:Configuration=Release 
 
 and finally:<br />
 
-    Release/main.exe<br />
+    Release/main.exe 

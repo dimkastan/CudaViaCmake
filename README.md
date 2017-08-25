@@ -3,9 +3,9 @@ This is a very simple project using CMake in order to create a project for compi
 I created this repo in order to allow other people have an entry point into creating -cmake- based projects 
 supporting both cuda and c++
 
-In the future I plan to add more options, checks etc.
+
  
-# Instructions 
+# Windows Instructions 
 Clone the project and run the following commands:<br />
 <br />
     
@@ -18,10 +18,11 @@ Clone the project and run the following commands:<br />
 If everything is ok, a main.exe will be built inside Debug/ folder.
 Then run Debug/main.exe and the program should return:
 
-Checking Results<br />
-Results verified<br />
-c[0]=1.000000 (== 1.000000 * 1.000000)<br />
-c[1]=4.000000 (== 2.000000 * 2.000000)<br />
+	Checking Results<br />
+	Results verified<br />
+	c[0]=1.000000 (== 1.000000 * 1.000000)<br />
+	c[1]=4.000000 (== 2.000000 * 2.000000)<br />
+	
 <br />
 # Options
 For release versions run:<br />
@@ -32,3 +33,19 @@ For release versions run:<br />
 and finally:<br />
 
     Release/main.exe 
+
+
+## Ubuntu Instructions 
+# Tested with cmake 3.9.1 on Ubuntu 16.04
+
+    mkdir build
+    cd build
+    cmake ..
+    make
+    # now run the application
+    ./main
+
+    Checking Results<br />
+	Results verified<br />
+	c[0]=1.000000 (== 1.000000 * 1.000000)<br />
+	c[1]=4.000000 (== 2.000000 * 2.000000)<br />

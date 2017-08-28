@@ -36,7 +36,7 @@ and finally:<br />
 
 
 ## Ubuntu Instructions 
-# Tested with cmake 3.9.1 on Ubuntu 16.04
+# Tested with cmake 3.9.1 on Ubuntu 16.04 
 
     mkdir build
     cd build

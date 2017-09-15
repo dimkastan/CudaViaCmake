@@ -26,9 +26,14 @@ set(CUDA_VERBOSE_BUILD ON)
 # compile cuda files
 file(GLOB CUDA_FILES cufiles/device.cu)
 list(APPEND CUDA_NVCC_FLAGS --compiler-options -use_fast_math)
+list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_20,code=sm_20)
 list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_35,code=sm_35)
 list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_50,code=sm_50)
+list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_52,code=sm_52)
 list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_53,code=sm_53) 
+list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_60,code=sm_60) 
+list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_62,code=sm_62) 
+CUDA_COMPILE(cugen ${CUDA_FILES})
 
 
 CUDA_COMPILE(cugen ${CUDA_FILES})

@@ -6,7 +6,7 @@ supporting both cuda and c++
 At the moment there are two demos available.
 - Build single executable    [Demo_BuildSingleExecutable]
 - Build multiple Executables [Demo_BuildMultipleTargets]
- 
+- Build a simple CuDNN demo [Demo_cuDNN]
 
 Building instructions are provided in README.md files.
 
